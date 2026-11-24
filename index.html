@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sanjeet Singh – Portfolio</title>
+<meta name="description" content="Portfolio of Sanjeet Singh, B.Tech CSE student specializing in Cloud Computing with AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#top">Sanjeet Singh</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav id="navLinks">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button id="themeBtn" aria-label="Switch theme">Dark mode</button>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>I build software that runs in the cloud and learns from data.</h1>
+      <p>I'm Sanjeet, a third-year B.Tech student in Computer Science Engineering, studying Cloud Computing with AI. I'm looking for an internship where I can write real code and learn from a team.</p>
+      <a class="btn" href="#projects">See my projects</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+    <div class="terminal" aria-label="Short intro typed like a terminal">
+      <div class="bar"><span></span><span></span><span></span></div>
+      <pre id="typed" aria-live="off"></pre>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>I'm a third-year B.Tech student who likes understanding how things work and then building them. I write most of my code in Java and Python, and use C to learn what happens closer to the machine.</p>
+    <p>Cloud computing and AI interest me most. I'm looking for internship and full-time opportunities where I can apply my programming fundamentals and problem-solving skills to real software and cloud work, and I'm open to hackathons and team projects.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <article class="edu">
+      <h3>B.Tech in Computer Science Engineering</h3>
+      <p>Specialization: Cloud Computing with AI</p>
+      <p>Shri Ramswaroop Memorial University</p>
+      <p class="muted">3rd year. Expected graduation: 2028.</p>
+      <p class="muted">Coursework: Data Structures and Algorithms, Object-Oriented Programming with Java, Cloud Computing Fundamentals, AI and Machine Learning Basics, Database Management Systems.</p>
+    </article>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="lang">Languages</button>
+      <button class="tab" data-filter="core">Core concepts</button>
+      <button class="tab" data-filter="tool">Tools</button>
+      <button class="tab" data-filter="focus">Focus areas</button>
+    </div>
+    <ul class="chips" id="chips">
+      <li data-g="lang">C</li><li data-g="lang">Java</li><li data-g="lang">Python</li><li data-g="lang">SQL</li>
+      <li data-g="lang">HTML</li><li data-g="lang">CSS</li><li data-g="lang">JavaScript</li>
+      <li data-g="core">Data Structures &amp; Algorithms</li><li data-g="core">Object-Oriented Programming</li>
+      <li data-g="core">Operating Systems</li><li data-g="core">Computer Networks</li><li data-g="core">DBMS</li>
+      <li data-g="tool">VS Code</li><li data-g="tool">IntelliJ IDEA</li><li data-g="tool">Git &amp; GitHub</li>
+      <li data-g="focus">Cloud Computing</li><li data-g="focus">Artificial Intelligence</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience and certifications</h2>
+    <article class="edu">
+      <h3>Virtual Internship: Generative AI</h3>
+      <p>IBM Career Education Program (IBMCEP), via IBM SkillsNetwork</p>
+      <p class="muted">Feb to Mar 2026</p>
+      <p>Completed a hands-on virtual internship on Generative AI concepts and applications, working with IBM's Generative AI tools and workflows.</p>
+    </article>
+    <ul class="certs">
+      <li><strong>Data Analytics Job Simulation</strong>, Deloitte (via Forage), Nov 2026</li>
+      <li><strong>Generative AI virtual internship</strong>, IBMCEP / IBM SkillsNetwork, 2026</li>
+      <li><strong>Workshop on Generative AI</strong>, Techgyan Technologies, IIT Kanpur, Mar 2025</li>
+      <li><strong>Python 101 for Data Science</strong>, IBM SkillsBuild / Cognitive Class, Oct 2024</li>
+    </ul>
+    <p>I'm also a member of the Discipline Committee at my university.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Deloitte Data Analytics Job Simulation</h3>
+        <p>A simulated consulting engagement on data analysis and forensic technology, completed through Forage.</p>
+        <button class="more" aria-expanded="false">Details</button>
+        <div class="extra" hidden>
+          <p>Completed practical tasks in data analysis and forensic technology. Nov 2026.</p>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Personal portfolio website</h3>
+        <p>A responsive portfolio built with plain HTML, CSS and JavaScript and deployed on GitHub Pages.</p>
+        <button class="more" aria-expanded="false">Details</button>
+        <div class="extra" hidden>
+          <p>Features: animated terminal intro, dark mode, skill filter, validated contact form.</p>
+          <p>Tech: HTML, CSS, JavaScript, GitHub Pages.</p>
+        </div>
+      </article>
+      <!--
+      Copy this block for each new project and fill it in:
+      <article class="card">
+        <h3>Project name</h3>
+        <p>One or two sentences on what it does.</p>
+        <button class="more" aria-expanded="false">Details</button>
+        <div class="extra" hidden>
+          <p>Tech: ...</p>
+          <p><a href="https://github.com/YOUR-USERNAME/REPO">View on GitHub</a></p>
+        </div>
+      </article>
+      -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Want to talk about an internship or a project? Send me a message, or email me at <a href="mailto:sanjeetsingh28738@gmail.com">sanjeetsingh28738@gmail.com</a>.</p>
+    <form id="form" novalidate>
+      <label>Name <input id="fName" required autocomplete="name"></label>
+      <label>Email <input id="fEmail" type="email" required autocomplete="email"></label>
+      <label>Message <textarea id="fMsg" rows="4" required></textarea></label>
+      <p class="error" id="formMsg" role="alert"></p>
+      <button class="btn" type="submit">Send message</button>
+    </form>
+    <p class="links">
+      <a href="https://github.com/YOUR-USERNAME">GitHub</a>
+      <a href="https://www.linkedin.com/in/sanjeet-singh-27428b323">LinkedIn</a>
+    </p>
+  </section>
+</main>
+
+<footer><p>© <span id="year"></span> Sanjeet Singh</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
